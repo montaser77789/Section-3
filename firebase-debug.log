@@ -1,0 +1,35 @@
+[debug] [2024-01-24T10:12:31.365Z] ----------------------------------------------------------------------
+[debug] [2024-01-24T10:12:31.367Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-01-24T10:12:31.368Z] CLI Version:   13.0.3
+[debug] [2024-01-24T10:12:31.368Z] Platform:      win32
+[debug] [2024-01-24T10:12:31.368Z] Node Version:  v18.17.1
+[debug] [2024-01-24T10:12:31.369Z] Time:          Wed Jan 24 2024 12:12:31 GMT+0200 (Eastern European Standard Time)
+[debug] [2024-01-24T10:12:31.369Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-24T10:12:31.496Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-24T10:12:31.496Z] > authorizing via signed-in user (mahmoudsobh305@gmail.com)
+[debug] [2024-01-24T10:12:31.497Z] [iam] checking project calander-b1d60 for permissions ["firebase.projects.get"]
+[debug] [2024-01-24T10:12:31.499Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/calander-b1d60:testIamPermissions [none]
+[debug] [2024-01-24T10:12:31.499Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/calander-b1d60:testIamPermissions x-goog-quota-user=projects/calander-b1d60
+[debug] [2024-01-24T10:12:31.499Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/calander-b1d60:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-24T10:12:32.624Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/calander-b1d60:testIamPermissions 200
+[debug] [2024-01-24T10:12:32.625Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/calander-b1d60:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-24T10:12:32.629Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60 [none]
+[debug] [2024-01-24T10:12:33.099Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60 200
+[debug] [2024-01-24T10:12:33.099Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60 {"projectId":"calander-b1d60","projectNumber":"519083021419","displayName":"calander","name":"projects/calander-b1d60","resources":{"hostingSite":"calander-b1d60"},"state":"ACTIVE","etag":"1_7b750e20-f3bd-4e5a-a953-332f649b8e64"}
+[info] 
+[info] === Serving from 'D:\About me\projects\sef training\secion3'...
+[info] 
+[debug] [2024-01-24T10:12:33.107Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/calander-b1d60/sites 
+[debug] [2024-01-24T10:12:34.258Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/calander-b1d60/sites 200
+[debug] [2024-01-24T10:12:34.259Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/calander-b1d60/sites {"sites":[{"name":"projects/calander-b1d60/sites/calander-b1d60","defaultUrl":"https://calander-b1d60.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-24T10:12:34.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60/webApps/-/config [none]
+[debug] [2024-01-24T10:12:35.008Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60/webApps/-/config 200
+[debug] [2024-01-24T10:12:35.008Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60/webApps/-/config {"projectId":"calander-b1d60","storageBucket":"calander-b1d60.appspot.com","apiKey":"AIzaSyCCD77pmhbwocb74lK_Hh1dQr3YQNnZE5o","authDomain":"calander-b1d60.firebaseapp.com","messagingSenderId":"519083021419"}
+[debug] [2024-01-24T10:12:35.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60 [none]
+[debug] [2024-01-24T10:12:35.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60 200
+[debug] [2024-01-24T10:12:35.371Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calander-b1d60 {"projectId":"calander-b1d60","projectNumber":"519083021419","displayName":"calander","name":"projects/calander-b1d60","resources":{"hostingSite":"calander-b1d60"},"state":"ACTIVE","etag":"1_7b750e20-f3bd-4e5a-a953-332f649b8e64"}
+[info] i  hosting[calander-b1d60]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[calander-b1d60]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [24/Jan/2024:10:13:02 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [24/Jan/2024:10:13:02 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [24/Jan/2024:10:13:06 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [24/Jan/2024:10:13:06 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""}}

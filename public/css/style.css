@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'poppins' , sans-serif;
+}
+:root{
+    --Primary:#FED049;
+    --Secondary:#007580;
+    --Red:#E01B24;
+    --Grey:#FAFAFA;
+    --Black:#000000;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 450px;   
+    background: #fff;
+    border-radius: 10px;
+}
+.current-date{
+    color: #079ba8;
+    font-size: 35px;
+    font-weight: 700 !important;
+    margin-left: 35px;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .icons span:last-child{
+    margin-left: -10px;
+}
+.calender{
+    padding: 20px;
+}
+.calender ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calender .days{
+    margin-bottom: 20px;
+}
+.calender .weeks li{
+    font-weight: 500;
+}
+.calender ul li{
+    position: relative;
+    width: calc(100% / 7);
+}
+.calender .days li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: #fff;
+}
+.calender .days li::before{
+    position: absolute;
+    content: "";
+    height: 33px;
+    width: 33px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li:hover::before{
+    background-color:#f2f2f2 ;
+}
+.days li.active::before{
+    background-color:#10abb9;
+}
+/* ////////////////////////////////////// */
+.cir{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -140px;
+    margin-left: 10px;
+    border-width: 3px;
+    border-image-repeat: linear-gradient(#ffca2c , #007580 ) ;
+    border-right: #ffca2c;
+    border-bottom: #ffca2c;
+    border-top: #c5b991;
+    border-style: solid;
+    color: #007580;
+    font-size: 40px;
+}
+.rec{
+    width: 120px;
+    height: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(  to right ,#045c64 , #ffca2c );
+    margin-top: -15px;
+    margin-left: -1px;
+    font-size: 13px;
+    font-weight: 700;
+}
+#dat{
+    margin-top: 86px;
+    font-size: 15px;
+    color: var(--Grey);
+    margin-left: -2px;
+}
+.mas1 , .mas2 , .mas3 , .mas4 , .mas5 , .mas6 ,.mas7{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+}
+.mas1{
+margin-left: -510px;
+margin-top: -55px;
+}
+.mas2{
+    margin-left: -456px;
+    margin-top: -2px;
+}
+.mas3{
+    margin-left: -403px;
+    margin-top: -2px;
+}
+.mas4{
+    margin-left: -348px;
+    margin-top: -2px;
+}
+.mas5{
+    margin-left: -295px;
+    margin-top: -2px;
+}
+.mas6{
+    margin-left: -242px;
+    margin-top: -2px;
+}
+.mas7{
+    margin-left: -185px;
+    margin-top: -2px;
+}
+input[type=number]{
+    width: 180px;
+    height: 30px;
+    background-color: #ffd24d;
+}
